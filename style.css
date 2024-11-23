@@ -1,4 +1,12 @@
-nav {
+/* style.css*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
     background-color: green;
     color: white;
     display: flex;
@@ -6,6 +14,7 @@ nav {
     align-items: center;
     padding: 10px 20px;
   }
+  
   .logo {
     font-size: 1.5rem;
   }
@@ -42,8 +51,7 @@ nav {
     display: none;
   }
   
-  @media (max-width: 768px)
-   {}
+  @media (max-width: 768px) {
     .checkbtn {
       display: block;
       order: 1;
@@ -72,3 +80,7 @@ nav {
       font-size: 20px;
     }
   
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
